@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>起点科技-系统信息</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="/static/lib/flat/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- Loading Flat UI -->
+        <link href="/static/lib/flat/css/flat-ui.css" rel="stylesheet">
+        <link href="/static/lib/flat/css/demo.css" rel="stylesheet">
+        <link href="/static/lib/flat/bootstrap/css/prettify.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/static/img/favicon.ico">
+        <script type="text/javascript" src="/static/lib/flat/js/jquery-2.0.3.min.js"></script>
+        <script type="text/javascript" src="/static/lib/flat/js/bootstrap.min.js"></script>
+        </head>
+<p>Go的版本:{{.goVer}}</p>
+<p>操作系统:{{.osInfo}}</p>
+<p>主机名:{{.hostname}}</p>
+<p>当前存在的Go程数:{{.goNumGoroutine}}</p>
+<p>本地机器的逻辑CPU个数:{{.hardwareNumCPU}}</p>
+<p>主硬盘容量：{{.hardwareDiskAll}}Ｇ</p>
+<p>主硬盘已使用：{{.hardwareDiskUsed}}Ｇ</p>
+<p>主硬盘剩余：{{.hardwareDiskFree}}Ｇ</p>
+<!-- <p>{{.hardwareMem}}</p> -->
+    </body>
+</html>

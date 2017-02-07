@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>登录--起点科技</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="static/lib/flat/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- Loading Flat UI -->
+        <link href="static/lib/flat/css/flat-ui.css" rel="stylesheet">
+        <link href="static/lib/flat/css/demo.css" rel="stylesheet">
+        <link href="static/lib/flat/bootstrap/css/prettify.css" rel="stylesheet">
+    <link rel="shortcut icon" href="static/img/favicon.ico">
+        <script type="text/javascript" src="/static/lib/flat/js/jquery-2.0.3.min.js"></script>
+        <script type="text/javascript" src="/static/lib/flat/js/bootstrap.min.js"></script>
+
+
+
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.post("login/check",
+    {
+         name:" dk",
+      city:"Duckburg"
+    },
+    function(data,status){
+      alert("数据：" + data + "\n状态：" + status);
+    });
+  });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+</head>
+    <body>
+    <div id="wrapper">  
+    <ul id="form-section">
+    <form class="login-in-form" action="login/check" method="post">
+      <li>
+        <label>
+          <span>邮箱</span>
+          <input type="email" name="email" tabindex="3" placeholder="请输入邮箱">
+        </label>
+      </li>
+      <li>
+        <label>
+          <span>密码</span>
+          <input type="password" name="password" tabindex="9" pattern=".{6,}" placeholder="请输入密码" title="最少长度是六位" required>
+        </label>
+      </li>
+{{.Success}}
+    {{create_captcha}}
+    <input name="captcha" type="text">
+    <input name="submit" type="submit">
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+<button>向页面发送 HTTP POST 请求，并获得返回的结果</button>
+
+    </body>
+</html>

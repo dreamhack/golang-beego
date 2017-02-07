@@ -1,0 +1,14 @@
+2015/03/24 23:25:48 [app.go:103] [I] http server Running on :8080
+2015/03/24 23:25:56 [router.go:845] [D] | GET        | /admin                                   | 56.243378ms      | match      | /admin                                   | 
+2015/03/24 23:25:59 [router.go:845] [D] | GET        | /admin                                   | 49.18749ms       | match      | /admin                                   | 
+2015/03/24 23:26:33 [router.go:845] [D] | POST       | /admin/add                               | 1.06124ms        | notmatch   | 
+2015/03/24 23:27:06 [router.go:845] [D] | POST       | /admin/add/                              | 940.744µs        | notmatch   | 
+2015/03/24 23:29:05 [router.go:845] [D] | GET        | /admin/add/史蒂夫                           | 1.088682ms       | notmatch   | 
+2015/03/24 23:29:20 [router.go:845] [D] | POST       | /admin/add／                              | 899.912µs        | notmatch   | 
+2015/03/24 23:30:31 [router.go:845] [D] | GET        | /admin/add/sd                            | 875.5µs          | notmatch   | 
+2015/03/24 23:30:36 [router.go:845] [D] | GET        | /admin/add/sdsd                          | 1.426582ms       | notmatch   | 
+2015/03/24 23:32:30 [app.go:103] [I] http server Running on :8080
+2015/03/24 23:32:36 [app.go:103] [I] http server Running on :8080
+2015/03/24 23:33:57 [app.go:103] [I] http server Running on :8080
+2015/03/24 23:41:29 [app.go:103] [I] http server Running on :8080
+2015/03/26 21:44:42 [app.go:103] [I] http server Running on :8080

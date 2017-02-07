@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>运维平台</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="/static/assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/static/assets/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/static/assets/css/ace.min.css"/>
+    <link rel="stylesheet" href="/static/assets/css/ace-rtl.min.css"/>
+    <link rel="stylesheet" href="/static/assets/css/ace-skins.min.css"/>
+    <script type="text/javascript" src="/static/lib/flat/js/jquery-2.0.3.min.js"></script>
+    <script src="/static/assets/js/bootstrap.min.js"></script>
+    <script src="/static/assets/js/typeahead-bs2.min.js"></script>
+    <!-- page specific plugin scripts -->
+    <script src="/static/assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="/static/assets/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="/static/assets/js/jquery.slimscroll.min.js"></script>
+    <script src="/static/assets/js/jquery.easy-pie-chart.min.js"></script>
+    <script src="/static/assets/js/jquery.sparkline.min.js"></script>
+    <script src="/static/assets/js/flot/jquery.flot.min.js"></script>
+    <script src="/static/assets/js/flot/jquery.flot.pie.min.js"></script>
+    <script src="/static/assets/js/flot/jquery.flot.resize.min.js"></script>
+    <!-- ace scripts -->
+    <script src="/static/assets/js/ace-elements.min.js"></script>
+    <script src="/static/assets/js/ace.min.js"></script>  
+</head>
+<body>
+  
+    <div>
+        {{.SideBar}}
+    </div>
+    <div class="container">
+        {{.LayoutContent}}
+    </div>
+    {{.Scripts}}
+</body>
+</html>
